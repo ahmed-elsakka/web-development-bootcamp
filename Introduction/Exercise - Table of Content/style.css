@@ -1,0 +1,13 @@
+h1 {
+	background-color: blue;
+	color: white;
+}
+
+h2 {
+	color: blue;
+}
+
+h2:hover {
+	color: red;
+	cursor: pointer;
+}
