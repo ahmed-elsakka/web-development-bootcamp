@@ -1,0 +1,18 @@
+body {
+  font-family: Verdana, Arial;
+}
+
+h1 {
+  color: #fff;
+  background-color: gray;
+}
+
+h1:hover {
+  background-color: blue;
+  transition:all 500ms ease-in-out;
+}
+
+p {
+  margin-left: 40px;
+  margin-top: 20px;
+}
