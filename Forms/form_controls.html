@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Forms</title>
+  <style>
+    fieldset {
+      padding: 8px 12px;
+      background-color: aliceblue;
+      margin-bottom: 8px;
+    }
+    legend {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>Fill in this form to register</h2>
+
+  <form action="#">
+    <fieldset>
+      <legend>Personal Data</legend>
+        <label for="fname">First Name: </label>
+        <input id="fname" type="text" name="fname"/>
+        <br />
+        <label for="lname">Last Name: </label>
+        <input id="lname" type="text" name="lname"/>
+        <br />
+        <label for="email">Email: </label>
+        <input id="email" type="text" name="email"/>
+    </fieldset>
+    <fieldset>
+      <legend>Account Information</legend>
+      <label for="username">Username: </label>
+      <input id="username" type="text" name="username"/>
+      <br />
+      <label for="password">Password: </label>
+      <input id="password" type="password" name="password"/>
+      <br />
+    </fieldset>
+    <input type="submit" value="Register"/>
+  </form>
+</body>
+</html>
