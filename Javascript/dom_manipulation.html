@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Javascript</title>
+</head>
+<body>
+  <h1 id="title">Hello World!</h1>
+  <img id="image" src="https://images.freeimages.com/images/large-previews/49e/christmas-decoration-1578126.jpg?fmt=webp&h=350" />
+  <br />
+  <div id="div">
+    
+  </div>
+  <button id="btn">Apply Styles</button>
+  <br />
+  <button id="add-btn">Add Paragraph</button>  
+  <br />
+  <button id="remove-btn">Remove Paragraph</button>
+
+  <script>
+    const title = document.getElementById("title");
+    const addBtn = document.getElementById("add-btn");
+    const div = document.getElementById("div");
+    const paragraph = document.createElement("p");
+    const removeBtn = document.getElementById("remove-btn");
+
+    title.textContent = "DOM Manipulation!";
+    title.innerHTML = "<p>Hello World!</p>";
+    console.log(title);
+    console.log(title.getAttribute('id'));
+
+    setTimeout(function() {
+      const img = document.getElementById("image");
+      img.setAttribute("src", "https://images.freeimages.com/images/large-previews/68a/elegant-floral-coffee-table-display-0410-5697572.jpg?fmt=webp&h=350");
+    }, 500);
+
+    const button = document.getElementById('btn');
+    button.addEventListener('click', () => {
+      title.style.color = 'blue';
+      title.style.fontSize = "20px";
+      title.style.fontWeight = "bold";
+    });
+
+    addBtn.addEventListener("click", () => {
+      paragraph.textContent = "This is a dynamically added paragraph.";
+      div.appendChild(paragraph);
+    });
+
+    
+    removeBtn.addEventListener("click", () => {
+      paragraph.remove();
+    });
+  </script>
+</body>
+</html>
